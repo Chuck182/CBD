@@ -1,0 +1,44 @@
+
+.frequently {
+    margin-top: 150px;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 50px;
+        font-size: 30px;
+        letter-spacing: $letter-spacing;
+    }
+}
+
+.accordion {
+    max-width: 573px;
+   margin: 0 auto;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-btn {
+    @include accord-btn;
+    letter-spacing: $letter-spacing;
+
+    img {
+        padding-right: 10px;
+        margin-top: -5px;
+    }
+
+    &:last-child {
+        border-top: 2px solid #eaedde;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(110, 119, 74);
+    background-color: #f7f8f3;
+}
+
+.accordion-body {
+    background-color: #f7f8f3;
+    padding: 2rem 1.25rem;
+}

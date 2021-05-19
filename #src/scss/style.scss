@@ -1,0 +1,85 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+    }
+
+@import "fonts";
+@import "./normalise";
+@import "./mixins.scss";
+@import "./_variables.scss";
+
+@import "../scss/part/header.scss";
+@import "../scss/part/intro";
+@import "../scss/part/_about";
+@import "../scss/part/Featured-products";
+@import "../scss/part/frequently_asked_questions";
+@import "../scss/part/testimonials";
+@import "../scss/part/footer";
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswaldregular";
+    
+}
+.main {
+    background-color: $background-color;
+}
+
+
+.intro {
+    background-image: url(../img/Intro-background.jpg);
+    // min-height: 100vh;
+    height: 1084px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-container {
+    border-image: url(../img/border.png) 12 round;
+    border: 12px solid transparent;
+    max-width: 690px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-secondary {
+    background-color: #6e774a;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: $main-color; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+#myBtn:hover {
+    background-color: #555; 
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+  

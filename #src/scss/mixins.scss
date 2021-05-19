@@ -1,0 +1,31 @@
+@mixin d-flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin accord-btn {
+    color: rgb(110, 119, 74);
+    background-color: #f7f8f3;
+    border-top: 2px solid #eaedde;
+    position: relative;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    text-align: left;
+    border: 0;
+    border-radius: 0;
+    font-size: 18px;
+}
+
+@mixin center {
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+@mixin hover-link {
+    color: blue;
+}
+
+
+

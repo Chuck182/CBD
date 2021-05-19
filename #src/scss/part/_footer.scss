@@ -1,0 +1,142 @@
+.footer {
+    background-color: $background-color;
+
+    &__links {
+    list-style: none;
+    }
+    padding-top: 100px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 150px;
+    }
+
+    &__column {
+        border-top: 1px solid transparent;
+        padding-top: 30px;
+        border-color: $main-color;
+
+        @media screen and (min-width: 768px) {
+            padding-top: 100px;
+           
+        }
+    }
+    & .col-md-4 {
+        text-align: center;
+    }
+    &__link {
+        color: $main-color;
+        font-weight: 300;
+        line-height: 4rem;
+        letter-spacing: .28em;
+        text-transform: uppercase;
+        transition: all .4s ease-in;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.4rem;
+        }
+
+        a {
+            font-size: 14px;
+        }
+    }
+
+    &__logo {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 5.5rem;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        margin-top: -30px;
+
+        a {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+
+    &__vertical-line {
+    margin: 0 auto;
+    width: 1px;
+    height: 55px;
+    background-color:$main-color;
+    }
+
+    &__copy {
+        font-size: 1.3rem;
+        color: $main-color;
+        font-weight: 300;
+        line-height: 4rem;
+        letter-spacing: .28em;
+        text-transform: uppercase;
+        padding: 30px 0 20px;
+        text-align: center;
+    
+        @media screen and (min-width: 768px) {
+            font-size: 1.1rem;
+            padding: 60px 0;
+        }
+    }
+
+}
+
+.social__link img:hover {
+    transform: scale(1.2);
+}
+
+.subscribe{
+    order: -1;
+
+    @media screen and (min-width: 768px) {
+        order: 0;
+    }
+
+    &__title {
+        font-size: 18px;
+        color: #1c1c1b;
+        font-weight: 400;
+        line-height: 7.5rem;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+    }
+    &__form {
+        .form-control,
+        .btn {
+        padding: 0 30px;
+        border-left-color: transparent;
+        transition: all .4s ease-in;
+        border-radius: 0;
+        border-color: #ced6af;
+        letter-spacing: $letter-spacing;
+        }
+        .form-control {
+            padding-left: 30px;
+            height: 60px;
+            background-color: transparent;
+            border-right-color: transparent;
+        }
+        .btn {
+            padding: 0 30px;
+            border-left-color: #ced6af;
+            
+        }
+    }
+    
+}
+.form__vertical-line {
+    width: 1px;
+    height: 45px;
+    margin-top: 7px;
+}
+
+.social {
+    list-style: none;
+    padding: 50px 0 40px;
+    text-align: center;
+
+    &__item {
+        display: inline-block;
+        margin: 0 30px;
+    }
+}

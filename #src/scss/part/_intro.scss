@@ -1,0 +1,106 @@
+
+
+.intro-container {
+    max-width: 1170px;
+    margin-top: 310px;
+}
+
+.intro-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__title {
+        font-size: 55px;
+        color: $color;
+        letter-spacing: $letter-spacebig;
+        
+
+        @media screen and (max-width:400px) {
+            font-size: 30px;;      
+        }
+
+    &__title_active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    }
+
+    &__smtitle {
+        font-size: 55px;
+        color: $color;
+        letter-spacing: $letter-spacebig;
+        @media screen and (max-width:400px) {
+            font-size: 30px;;      
+        }
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        color: $color;
+        letter-spacing: 5px;
+        font-family: "Oswaldextralight";
+        margin-bottom: 60px;
+    }
+
+    &__link {
+        font-size: 20px;
+        text-decoration: none;
+        border: 1px solid $color;
+        padding: 20px 100px 20px 30px;
+        color: $color;
+    }
+
+    &__link:hover {
+        background-color: rgb(110, 119, 74);
+    }
+
+    &__link::after {
+        content: '';
+        border-bottom: 2px solid $color;
+        position: absolute;
+        width: 44px;
+        height: 15px;
+        margin-left: 20px;
+    }
+
+    &__btn {
+        text-decoration: none;
+        font-family: "Oswaldextralight";
+        font-size: 18px;
+        padding-top: 30px;
+        letter-spacing: 5px;
+        color: $color;
+    }
+
+
+    &__btn:hover {
+       letter-spacing: 10px;
+    }
+
+    &__arrow {
+        @include d-flex-center;
+        margin-top: 20%;
+    }
+}
+
+.intro-block {
+    transform:rotate(270deg);
+    position: absolute;
+    margin-top: -125px;
+    color: $color;  
+    font-size: 26px;
+
+    &::before {
+        content: '';
+        border-top: 2px solid $color;
+        position: absolute;
+        left: -100px;
+        top:20px;
+        width: 80px;
+    }
+
+    @media screen and (max-width:400px) {
+    display: none;      
+}
+}
